@@ -101,6 +101,16 @@ textarea {
     resize: vertical;
 }
 
+#notice-section {
+    background-color: #fffbe6;
+    border-left: 5px solid #f0ad4e;
+}
+
+#notice-section h2 {
+    color: #c0893e;
+    border-bottom-color: #f0ad4e;
+}
+
 #status {
     margin-top: 1rem;
     text-align: center;
@@ -164,4 +174,3 @@ audio {
     border-radius: var(--border-radius);
     text-align: center;
 }
-

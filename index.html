@@ -12,24 +12,20 @@
 <body>
     <div id="app">
         <header>
-            <h1>TTS Custom Voice Demo</h1>
-            <p>This app demonstrates using custom voices with Text-to-Speech. While direct voice cloning from a recording isn't available here, you can use pre-existing voice IDs for unique TTS output.</p>
+            <h1>TTS with Custom Voices</h1>
+            <p>This application demonstrates Text-to-Speech using pre-existing custom voices.</p>
         </header>
 
         <main>
-            <section id="recorder-section">
-                <h2>1. Record Your Voice (Demonstration)</h2>
-                <p>In a full voice cloning app, you would first record a sample of your voice.</p>
-                <button id="record-btn">
-                    <img src="mic-icon.png" alt="mic" class="icon">
-                    <span>Start Recording</span>
-                </button>
-                <div id="status">Press the button to start recording.</div>
+            <section id="notice-section">
+                <h2>About Voice Cloning</h2>
+                <p><strong>True real-time voice cloning from a recording is not currently supported.</strong></p>
+                <p>Instead, this demo uses a pre-selected custom voice ID from a library of voices to synthesize speech. This showcases how a unique voice can be used for TTS.</p>
             </section>
 
             <section id="tts-section">
-                <h2>2. Synthesize Speech</h2>
-                <p>Now, type some text and we'll use a pre-selected custom voice to generate the audio.</p>
+                <h2>Synthesize Speech with a Custom Voice</h2>
+                <p>Type some text below and click the button to generate audio using a pre-selected custom voice.</p>
                 <textarea id="text-input" rows="4" placeholder="Type something to say...">Hello world! This is a test of a custom voice.</textarea>
                 <button id="synthesize-btn">
                     <img src="play-icon.png" alt="play" class="icon">
@@ -50,4 +46,3 @@
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
