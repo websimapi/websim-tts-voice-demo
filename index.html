@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS Voice Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>TTS Custom Voice Demo</h1>
+            <p>This app demonstrates using custom voices with Text-to-Speech. While direct voice cloning from a recording isn't available here, you can use pre-existing voice IDs for unique TTS output.</p>
+        </header>
+
+        <main>
+            <section id="recorder-section">
+                <h2>1. Record Your Voice (Demonstration)</h2>
+                <p>In a full voice cloning app, you would first record a sample of your voice.</p>
+                <button id="record-btn">
+                    <img src="mic-icon.png" alt="mic" class="icon">
+                    <span>Start Recording</span>
+                </button>
+                <div id="status">Press the button to start recording.</div>
+            </section>
+
+            <section id="tts-section">
+                <h2>2. Synthesize Speech</h2>
+                <p>Now, type some text and we'll use a pre-selected custom voice to generate the audio.</p>
+                <textarea id="text-input" rows="4" placeholder="Type something to say...">Hello world! This is a test of a custom voice.</textarea>
+                <button id="synthesize-btn">
+                    <img src="play-icon.png" alt="play" class="icon">
+                    <span>Synthesize Speech</span>
+                </button>
+                <div id="loading" class="hidden">
+                    <div class="spinner"></div>
+                    Generating audio...
+                </div>
+                <div id="audio-output" class="hidden">
+                    <audio id="audio-player" controls></audio>
+                </div>
+                 <div id="error-message" class="hidden"></div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
